@@ -29,12 +29,6 @@ except ImportError:
     os.system('pip install colored')
     from colored import fg
     clear()
-try:
-    import secrets
-except ImportError:
-    os.system('pip install secrets')
-    import secrets
-    clear()
 
 def close():
     input("\n- Prees enter to close /")
@@ -71,7 +65,7 @@ req = requests.sessions.session()
 
 log_url = 'https://www.instagram.com/accounts/login/ajax/'
 x_ig_app_id = randint(90000000000, 1000000000000000)
-x_instagram_ajax = secrets.token_hex(6)
+x_instagram_ajax = '92c94bd26ff3'
 log_head = {
     'accept': '*/*',
     'accept-encoding': 'gzip, deflate, br',
