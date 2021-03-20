@@ -18,7 +18,7 @@ except ImportError:
     import requests
     clear()
 try:
-    from random import randint, random
+    from random import randint, random, choice
 except ImportError:
     os.system('pip install random')
     from random import randint, random
