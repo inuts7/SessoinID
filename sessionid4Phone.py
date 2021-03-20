@@ -97,7 +97,7 @@ cookies = log.cookies
 def session_id():
 
     getsessionid = cookies.get('sessionid')
-    save = open(f'@{username}.txt', 'a').write(f'user = {username},\npass = {password},\nsessionid = {sessionid}\nBy @2vj6, Enjoy.')
+    save = open(f'@{username}.txt', 'a').write(f'user = {username},\npass = {password},\nsessionid = {getsessionid}\nBy @2vj6, Enjoy.')
     print(f'- Done Saving info For @{username} Successfully !')
     close()
 
