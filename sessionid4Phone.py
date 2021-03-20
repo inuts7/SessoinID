@@ -514,6 +514,7 @@ def login():
 
     if 'userId' in log.text:
         print("- logged in Successfully")
+        session_id()
     elif '"user":false,"authenticated":false' in log.text:
         print("Check Your Username PACA !")
         close()
